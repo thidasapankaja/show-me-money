@@ -1,5 +1,5 @@
-import { Row } from "@/types";
 import { createColumnHelper } from "@tanstack/react-table";
+import { Row } from "../types";
 
 export interface TableData {
   firstCol: string | undefined;

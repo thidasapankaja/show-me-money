@@ -1,4 +1,4 @@
-import { ApiResponse, BalanceSheetReport } from "@/types";
+import { ApiResponse, BalanceSheetReport } from "../types";
 
 const API_BASE_URL = "http://localhost:8000";
 

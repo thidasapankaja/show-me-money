@@ -1,9 +1,9 @@
 "use client";
-import { BalanceSheetTable } from "@/components/BalanceSheetTable";
-import { ErrorMessage } from "@/components/Error";
-import { LoadingIndicator } from "@/components/Loading";
-import { fetchBalanceSheet } from "@/services/api.service";
 import { useEffect, useState } from "react";
+import { BalanceSheetTable } from "../components/BalanceSheetTable";
+import { ErrorMessage } from "../components/Error";
+import { LoadingIndicator } from "../components/Loading";
+import { fetchBalanceSheet } from "../services/api.service";
 
 export default function Home() {
   const [tableData, setTableData] = useState<any>(null);

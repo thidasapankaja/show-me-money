@@ -1,5 +1,5 @@
-import { formatNumber } from "@/utils/formatNumber";
-import { formatDataForTable } from "@/utils/formatTable";
+import { formatNumber } from "../utils/formatNumber";
+import { formatDataForTable } from "../utils/formatTable";
 
 import {
   flexRender,
