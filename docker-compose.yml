@@ -1,0 +1,29 @@
+version: '3.8'
+services:
+  frontend:
+    build: ./demyst-fe
+    ports:
+      - "3001:3001"
+    networks:
+      - demyst-network
+    environment:
+      - NODE_ENV=development
+
+  backend:
+    build: ./demyst-be
+    ports:
+      - "8000:8000"
+    networks:
+      - demyst-network
+    environment:
+      - NODE_ENV=development
+
+  external-service:
+    image: jaypeng2015/show-me-the-money
+    ports:
+      - "3000:3000"
+    networks:
+      - demyst-network
+
+networks:
+  demyst-network:

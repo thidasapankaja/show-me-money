@@ -1,0 +1,1 @@
+export const XERO_API_URL = 'http://host.docker.internal:3000';
